@@ -79,8 +79,8 @@
 
     //this v does the same as that ^, but creates a new array instead of cutting something out of the old one
     const newComments = [
-      comments.slice(0, index),
-      comments.slice(index + 1)
+      ...comments.slice(0, index),
+      ...comments.slice(index + 1)
     ];
 
   </script>
